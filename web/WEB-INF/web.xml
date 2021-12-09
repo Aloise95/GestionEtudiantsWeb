@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AjoutEtudiant</servlet-name>
+        <servlet-class>AjoutEtudiant</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AjoutPromotion</servlet-name>
+        <servlet-class>AjoutPromotion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AffichePromotion</servlet-name>
+        <servlet-class>AffichePromotion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AfficheMeilleurPromotion</servlet-name>
+        <servlet-class>AfficheMeilleurPromotion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AjoutEtudiant</servlet-name>
+        <url-pattern>/AjoutEtudiant</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AjoutPromotion</servlet-name>
+        <url-pattern>/AjoutPromotion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AffichePromotion</servlet-name>
+        <url-pattern>/AffichePromotion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AfficheMeilleurPromotion</servlet-name>
+        <url-pattern>/AfficheMeilleurPromotion</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
